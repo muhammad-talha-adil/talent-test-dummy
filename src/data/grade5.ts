@@ -10,11 +10,11 @@ export const grade5Questions: Question[] = [
   // 2. Mathematics
   { q: "LCM of 4 and 6 is:", o: ["12", "10", "14", "8"], a: 0 },
   // 3. اسلامیات
-  { q: "نماز پڑھنے کا سب سے اہم وقت کب ہے؟", o: ["صبح", "دوپہر", "عصر", "جمعہ"], a: 3 },
+  { q: "جمعہ کی نماز کس دن پڑھی جاتی ہے؟ ", o: ["صبح", "دوپہر", "عصر", "جمعہ"], a: 3 },
   // 4. Science
   { q: "Water changing into ice is an example of:", o: ["Chemical change", "Physical change", "Evaporation", "Rusting"], a: 1 },
   // 5. Urdu
-  { q: "اسم معرفہ کی مثال", o: ["کتاب", "لڑکا", "گلاب", "تمام"], a: 0 },
+  { q: "اسم معرفہ کی مثال", o: ["کتاب", "لڑکا", "گلاب", "تمام"], a: 3 },
 
   // 6. English
   { q: "Choose the correct plural: child", o: ["childs", "childes", "children", "child"], a: 2 },
@@ -153,7 +153,7 @@ export const grade5Questions: Question[] = [
   // 67. Mathematics
   { q: "HCF of 20 and 30 is:", o: ["5", "10", "15", "20"], a: 1 },
   // 68. اسلامیات
-  { q: "حضرت یسوع علیہ السلام کے معجزات میں سے ایک", o: ["اندھی کو بینا کرنا", "زکوٰۃ دینا", "نماز پڑھنا", "روزہ رکھنا"], a: 0 },
+  { q: "حضرت عیسیٰ علیہ السلام کے معجزات میں سے ایک", o: ["اندھی کو بینا کرنا", "زکوٰۃ دینا", "نماز پڑھنا", "روزہ رکھنا"], a: 0 },
   // 69. Science
   { q: "Which is a conductor of electricity?", o: ["Wood", "Copper", "Plastic", "Rubber"], a: 1 },
   // 70. Urdu
@@ -186,7 +186,7 @@ export const grade5Questions: Question[] = [
   // 82. Mathematics
   { q: "Find 30% of 200", o: ["60", "50", "40", "70"], a: 0 },
   // 83. اسلامیات
-  { q: "کون امام حسین کی یاد میں کھڑا ہوا؟", o: ["امام حسین", "یزید", "علی", "ابو سفیان"], a: 0 },
+  { q: "کائنات کی سب سے عظیم ہستی کون ہیں؟", o: ["امام حسین", "حضرت محمدﷺ", "علی", "ابو سفیان"], a: 1 },
   // 84. Science
   { q: "Which is a physical change?", o: ["Melting butter", "Burning wood", "Rusting iron", "Cooking egg"], a: 0 },
   // 85. Urdu
@@ -208,7 +208,7 @@ export const grade5Questions: Question[] = [
   // 92. Mathematics
   { q: "HCF of 14 and 21 is:", o: ["7", "14", "21", "3"], a: 0 },
   // 93. اسلامیات
-  { q: "کون امام علی کے دوست تھے؟", o: ["حضرت ابو بکر", "حضرت عمر", "حضرت علی", "حضرت عثمان"], a: 2 },
+  { q: "چوتھے خلیفہ کون تھے؟", o: ["حضرت ابو بکر", "حضرت عمر", "حضرت علی", "حضرت عثمان"], a: 2 },
   // 94. Science
   { q: "Which planet is called the Blue Planet?", o: ["Earth", "Mars", "Venus", "Mercury"], a: 0 },
   // 95. Urdu
@@ -219,9 +219,12 @@ export const grade5Questions: Question[] = [
   // 97. Mathematics
   { q: "LCM of 6 and 8 is:", o: ["12", "24", "14", "20"], a: 1 },
   // 98. اسلامیات
-  { q: "حضرت داؤد علیہ السلام کس کام کے لیے مشہور ہیں؟", o: ["بادشاہ", "قاضی", "شاعر", "جنگجو"], a: 0 },
-  // 99. Science
-  { q: "Which is a conductor of electricity?", o: ["Wood", "Copper", "Plastic", "Rubber"], a: 1 },
-  // 100. Urdu
-  { q: "مترادف الفاظ: خوشحال", o: ["شاد", "اداس", "غمگین", "پاگل"], a: 0 }
+  // Suggested replacement for question 98 (duplicate of 48):
+{ q: "قرآن پاک کس پر نازل ہوا؟", o: ["حضرت محمد ﷺ", "حضرت موسیٰ علیہ السلام", "حضرت عیسیٰ علیہ السلام", "حضرت ابراہیم علیہ السلام"], a: 0 },
+
+// Suggested replacement for question 99 (duplicate of 69):
+{ q: "Which material is a good insulator of heat?", o: ["Copper", "Aluminum", "Wood", "Iron"], a: 2 },
+
+// Suggested replacement for question 100 (duplicate of 70):
+{ q: "مترادف الفاظ: تیز", o: ["آہستہ", "سست", "پھرتیلا", "بھاری"], a: 2 },
 ];
