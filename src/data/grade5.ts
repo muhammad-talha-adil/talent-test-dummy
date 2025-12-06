@@ -5,226 +5,109 @@ interface Question {
 }
 
 export const grade5Questions: Question[] = [
-  // 1. English
-  { q: "Which of these is a proper noun?", o: ["city", "Ahmed", "dog", "school"], a: 1 },
-  // 2. Mathematics
-  { q: "LCM of 4 and 6 is:", o: ["12", "10", "14", "8"], a: 0 },
-  // 3. اسلامیات
-  { q: "جمعہ کی نماز کس دن پڑھی جاتی ہے؟ ", o: ["صبح", "دوپہر", "عصر", "جمعہ"], a: 3 },
-  // 4. Science
-  { q: "Water changing into ice is an example of:", o: ["Chemical change", "Physical change", "Evaporation", "Rusting"], a: 1 },
-  // 5. Urdu
-  { q: "اسم معرفہ کی مثال", o: ["کتاب", "لڑکا", "گلاب", "تمام"], a: 3 },
-
-  // 6. English
-  { q: "Choose the correct plural: child", o: ["childs", "childes", "children", "child"], a: 2 },
-  // 7. Mathematics
-  { q: "HCF of 8 and 12 is:", o: ["4", "8", "6", "2"], a: 0 },
-  // 8. اسلامیات
-  { q: "زکوٰۃ کس کو دی جاتی ہے؟", o: ["ضرورت مند", "دوست", "رشتہ دار", "خود"], a: 0 },
-  // 9. Science
-  { q: "Which part of a plant makes seeds?", o: ["Leaf", "Flower", "Stem", "Root"], a: 1 },
-  // 10. Urdu
-  { q: "فعل ماضی کی مثال", o: ["کھایا", "کھاتا", "کھا رہا", "کھا"], a: 0 },
-
-  // 11. English
-  { q: "Choose correct pronoun: This is ___ book.", o: ["I", "My", "Me", "Mine"], a: 1 },
-  // 12. Mathematics
-  { q: "25% of 80 is:", o: ["10", "15", "20", "25"], a: 2 },
-  // 13. اسلامیات
-  { q: "حضرت محمد ﷺ کہاں پیدا ہوئے؟", o: ["مکہ", "مدینہ", "بغداد", "یروشلم"], a: 0 },
-  // 14. Science
-  { q: "Light travels in a:", o: ["Curve", "Straight line", "Circle", "Wave"], a: 1 },
-  // 15. Urdu
-  { q: "مترادف الفاظ: خوش", o: ["شاد", "اداس", "ناراض", "غمگین"], a: 0 },
-
-  // 16. English
-  { q: "Select the correct article: ___ orange is sweet.", o: ["A", "An", "The", "No article"], a: 1 },
-  // 17. Mathematics
-  { q: "Convert 3/4 into decimal", o: ["0.25", "0.75", "0.5", "0.85"], a: 1 },
-  // 18. اسلامیات
-  { q: "حضرت علی علیہ السلام کا لقب کیا ہے؟", o: ["اسد اللہ", "کرار", "ابوالحسن", "قمر"], a: 0 },
-  // 19. Science
-  { q: "Which of these is a gas?", o: ["Water", "Ice", "Steam", "Soil"], a: 2 },
-  // 20. Urdu
-  { q: "واحد جمع: لڑکا", o: ["لڑکے", "لڑکیاں", "لڑکوں", "لڑکا"], a: 0 },
-
-  // 21. English
-  { q: "Pick the adjective: The cat is ___", o: ["Small", "Run", "Running", "Quickly"], a: 0 },
-  // 22. Mathematics
-  { q: "Perimeter of square with side 6 cm:", o: ["24", "30", "12", "36"], a: 0 },
-  // 23. اسلامیات
-  { q: "نماز جمعہ کب ادا ہوتی ہے؟", o: ["پیر", "جمعہ", "ہفتہ", "اتوار"], a: 1 },
-  // 24. Science
-  { q: "Which of these is a physical change?", o: ["Melting ice", "Burning paper", "Rusting iron", "Cooking egg"], a: 0 },
-  // 25. Urdu
-  { q: "فعل ماضی: جانا", o: ["گیا", "جاتا", "جانا", "جا رہا"], a: 0 },
-
-  // 26. English
-  { q: "Singular of 'mice' is:", o: ["Mouses", "Mouse", "Mices", "Mous"], a: 1 },
-  // 27. Mathematics
-  { q: "HCF of 18 and 24 is:", o: ["6", "12", "18", "24"], a: 0 },
-  // 28. اسلامیات
-  { q: "معراج النبی ﷺ کب ہوئی؟", o: ["رات", "دن", "صبح", "شام"], a: 0 },
-  // 29. Science
-  { q: "Which planet is called the Red Planet?", o: ["Earth", "Mars", "Venus", "Jupiter"], a: 1 },
-  // 30. Urdu
-  { q: "مترادف الفاظ: غمگین", o: ["اداس", "خوش", "ناراض", "پاگل"], a: 0 },
-
-  // 31. English
-  { q: "Choose the correct tense: I ___ my homework yesterday.", o: ["do", "did", "doing", "done"], a: 1 },
-  // 32. Mathematics
-  { q: "LCM of 5 and 10 is:", o: ["10", "20", "5", "15"], a: 1 },
-  // 33. اسلامیات
-  { q: "زکوٰۃ کتنی فرض ہے؟", o: ["2.5%", "5%", "10%", "1%"], a: 0 },
-  // 34. Science
-  { q: "Which part of flower becomes fruit?", o: ["Petal", "Ovary", "Stamen", "Sepal"], a: 1 },
-  // 35. Urdu
-  { q: "مذکر مونث: لڑکی", o: ["لڑکی", "لڑکا", "کتاب", "گھوڑا"], a: 0 },
-
-  // 36. English
-  { q: "Pick the correct pronoun: Between you and ___", o: ["I", "Me", "Mine", "My"], a: 1 },
-  // 37. Mathematics
-  { q: "Find 50% of 60", o: ["20", "30", "25", "40"], a: 1 },
-  // 38. اسلامیات
-  { q: "حضرت عیسیٰ علیہ السلام کس قوم کے پیغمبر تھے؟", o: ["یہودی", "عرب", "مصر", "روم"], a: 0 },
-  // 39. Science
-  { q: "Which material is transparent?", o: ["Glass", "Wood", "Metal", "Stone"], a: 0 },
-  // 40. Urdu
-  { q: "اسم ضمیر کی مثال", o: ["میں", "کتاب", "گلاب", "لڑکا"], a: 0 },
-
-  // 41. English
-  { q: "Choose correct conjunction: I like tea ___ coffee.", o: ["and", "but", "or", "so"], a: 0 },
-  // 42. Mathematics
-  { q: "Area of rectangle 5cm × 3cm:", o: ["15", "8", "16", "10"], a: 0 },
-  // 43. اسلامیات
-  { q: "غزوات نبی ﷺ میں سب سے پہلی جنگ کون سی تھی؟", o: ["بدر", "احد", "خندق", "طائف"], a: 0 },
-  // 44. Science
-  { q: "Sound needs ___ to travel.", o: ["Air", "Vacuum", "Glass", "Wood"], a: 0 },
-  // 45. Urdu
-  { q: "متضاد الفاظ: اچھا", o: ["برا", "نیک", "خوب", "سنجیدہ"], a: 0 },
-
-  // 46. English
-  { q: "Choose the article: ___ sun rises in the east.", o: ["A", "An", "The", "No article"], a: 2 },
-  // 47. Mathematics
-  { q: "HCF of 12 and 16 is:", o: ["2", "4", "8", "6"], a: 1 },
-  // 48. اسلامیات
-  { q: "حضرت داؤد علیہ السلام کس کام کے لیے مشہور ہیں؟", o: ["بادشاہ", "قاضی", "شاعر", "جنگجو"], a: 0 },
-  // 49. Science
-  { q: "Which state of matter is water vapor?", o: ["Solid", "Liquid", "Gas", "Plasma"], a: 2 },
-  // 50. Urdu
-  { q: "مرکب الفاظ کی مثال", o: ["سفید + کالا = سیاہ", "سفید", "کالا", "رنگین"], a: 0 },
-
-  // 51. English
-  { q: "Pick the adjective: The weather is ___ today.", o: ["Sunny", "Run", "Running", "Sun"], a: 0 },
-  // 52. Mathematics
-  { q: "Convert 1/2 into decimal", o: ["0.2", "0.5", "0.25", "0.75"], a: 1 },
-  // 53. اسلامیات
-  { q: "حضرت موسیٰ علیہ السلام کس قوم کے نبی تھے؟", o: ["بنی اسرائیل", "عرب", "روم", "مصر"], a: 0 },
-  // 54. Science
-  { q: "Which material allows light to pass through?", o: ["Opaque", "Transparent", "Translucent", "None"], a: 1 },
-  // 55. Urdu
-  { q: "واحد جمع: کتاب", o: ["کتابیں", "کتابوں", "کتب", "کتاب"], a: 0 },
-
-  // 56. English
-  { q: "Singular of 'teeth' is:", o: ["Tooth", "Teeth", "Teeths", "Tooths"], a: 0 },
-  // 57. Mathematics
-  { q: "Find 40% of 50", o: ["10", "20", "15", "25"], a: 3 },
-  // 58. اسلامیات
-  { q: "نماز فرض ہے؟", o: ["ہاں", "نہیں", "کبھی کبھی", "صرف جمعہ"], a: 0 },
-  // 59. Science
-  { q: "Which gas do plants release?", o: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], a: 0 },
-  // 60. Urdu
-  { q: "مترادف الفاظ: غصہ", o: ["ناراض", "خوش", "اداس", "پاگل"], a: 0 },
-
-  // 61. English
-  { q: "Choose the correct tense: They ___ playing football now.", o: ["are", "is", "am", "was"], a: 0 },
-  // 62. Mathematics
-  { q: "Perimeter of triangle 3,4,5 cm sides:", o: ["12", "15", "10", "8"], a: 0 },
-  // 63. اسلامیات
-  { q: "جمعہ المبارک کس دن ہے؟", o: ["جمعہ", "پیر", "ہفتہ", "اتوار"], a: 0 },
-  // 64. Science
-  { q: "Which planet is closest to the Sun?", o: ["Mercury", "Venus", "Earth", "Mars"], a: 0 },
-  // 65. Urdu
-  { q: "اسم علم کی مثال", o: ["علی", "لڑکا", "کتاب", "گلاب"], a: 0 },
-
-  // 66. English
-  { q: "Pick the correct article: ___ book on the table.", o: ["A", "An", "The", "No article"], a: 2 },
-  // 67. Mathematics
-  { q: "HCF of 20 and 30 is:", o: ["5", "10", "15", "20"], a: 1 },
-  // 68. اسلامیات
-  { q: "حضرت عیسیٰ علیہ السلام کے معجزات میں سے ایک", o: ["اندھی کو بینا کرنا", "زکوٰۃ دینا", "نماز پڑھنا", "روزہ رکھنا"], a: 0 },
-  // 69. Science
-  { q: "Which is a conductor of electricity?", o: ["Wood", "Copper", "Plastic", "Rubber"], a: 1 },
-  // 70. Urdu
-  { q: "مترادف الفاظ: خوشحال", o: ["شاد", "اداس", "غمگین", "پاگل"], a: 0 },
-
-  // 71. English
-  { q: "Choose correct pronoun: ___ is my pen.", o: ["He", "She", "This", "It"], a: 3 },
-  // 72. Mathematics
-  { q: "Convert 0.6 into percentage", o: ["6%", "60%", "0.6%", "600%"], a: 1 },
-  // 73. اسلامیات
-  { q: "کون سی عبادت فرض ہے؟", o: ["نماز", "صدقہ", "دعا", "تلاوت"], a: 0 },
-  // 74. Science
-  { q: "Which is an example of satellite?", o: ["Moon", "Sun", "Earth", "Mars"], a: 0 },
-  // 75. Urdu
-  { q: "فعل ماضی: کھانا", o: ["کھایا", "کھاتا", "کھا رہا", "کھا"], a: 0 },
-
-  // 76. English
-  { q: "Pick the adjective: The cake is ___", o: ["Delicious", "Deliciously", "Delight", "Delightful"], a: 0 },
-  // 77. Mathematics
-  { q: "LCM of 3 and 4 is:", o: ["7", "12", "8", "6"], a: 1 },
-  // 78. اسلامیات
-  { q: "حضرت عیسیٰ علیہ السلام کس معجزہ کے لیے معروف ہیں؟", o: ["اندھی کو بینا کرنا", "مریض کو شفا دینا", "مجھ کو معجزہ دینا", "دنیا بنانا"], a: 1 },
-  // 79. Science
-  { q: "Which planet has rings?", o: ["Mars", "Earth", "Saturn", "Venus"], a: 2 },
-  // 80. Urdu
-  { q: "واحد جمع: بچہ", o: ["بچے", "بچی", "بچوں", "بچیاں"], a: 0 },
-
-  // 81. English
-  { q: "Singular of 'geese' is:", o: ["Goose", "Geese", "Gos", "Gooses"], a: 0 },
-  // 82. Mathematics
-  { q: "Find 30% of 200", o: ["60", "50", "40", "70"], a: 0 },
-  // 83. اسلامیات
-  { q: "کائنات کی سب سے عظیم ہستی کون ہیں؟", o: ["امام حسین", "حضرت محمدﷺ", "علی", "ابو سفیان"], a: 1 },
-  // 84. Science
-  { q: "Which is a physical change?", o: ["Melting butter", "Burning wood", "Rusting iron", "Cooking egg"], a: 0 },
-  // 85. Urdu
-  { q: "محاورہ: آسمان سے گرا، کھجور میں اٹکا", o: ["بہت بڑی مصیبت", "خوشی", "دلچسپی", "حوصلہ"], a: 0 },
-
-  // 86. English
-  { q: "Choose the correct tense: He ___ a letter.", o: ["write", "writes", "wrote", "writing"], a: 2 },
-  // 87. Mathematics
-  { q: "Area of square side 7 cm:", o: ["49", "28", "14", "21"], a: 0 },
-  // 88. اسلامیات
-  { q: "حضرت محمد ﷺ کی پیدائش کہاں ہوئی؟", o: ["مکہ", "مدینہ", "یروشلم", "بغداد"], a: 0 },
-  // 89. Science
-  { q: "Which part of plant makes food?", o: ["Roots", "Stem", "Leaves", "Flower"], a: 2 },
-  // 90. Urdu
-  { q: "الفاظ متضاد: اونچا", o: ["چھوٹا", "لمبا", "نیچا", "موٹا"], a: 2 },
-
-  // 91. English
-  { q: "Pick the correct article: ___ apple is red.", o: ["A", "An", "The", "No article"], a: 1 },
-  // 92. Mathematics
-  { q: "HCF of 14 and 21 is:", o: ["7", "14", "21", "3"], a: 0 },
-  // 93. اسلامیات
-  { q: "چوتھے خلیفہ کون تھے؟", o: ["حضرت ابو بکر", "حضرت عمر", "حضرت علی", "حضرت عثمان"], a: 2 },
-  // 94. Science
-  { q: "Which planet is called the Blue Planet?", o: ["Earth", "Mars", "Venus", "Mercury"], a: 0 },
-  // 95. Urdu
-  { q: "مرکب لفظ: تیز + روشنی", o: ["تیز روشنی", "تیز", "روشنی", "تیز و روشنی"], a: 0 },
-
-  // 96. English
-  { q: "Pick the adjective: The sky is ___", o: ["Blue", "Blues", "Bluely", "Bluer"], a: 0 },
-  // 97. Mathematics
-  { q: "LCM of 6 and 8 is:", o: ["12", "24", "14", "20"], a: 1 },
-  // 98. اسلامیات
-  // Suggested replacement for question 98 (duplicate of 48):
-{ q: "قرآن پاک کس پر نازل ہوا؟", o: ["حضرت محمد ﷺ", "حضرت موسیٰ علیہ السلام", "حضرت عیسیٰ علیہ السلام", "حضرت ابراہیم علیہ السلام"], a: 0 },
-
-// Suggested replacement for question 99 (duplicate of 69):
-{ q: "Which material is a good insulator of heat?", o: ["Copper", "Aluminum", "Wood", "Iron"], a: 2 },
-
-// Suggested replacement for question 100 (duplicate of 70):
-{ q: "مترادف الفاظ: تیز", o: ["آہستہ", "سست", "پھرتیلا", "بھاری"], a: 2 },
+  // English
+  { q: "What is a verb?", o: ["A naming word", "An action word", "A describing word", "A place"], a: 1 },
+  { q: "Choose the correct article: ___ apple.", o: ["A", "An", "The", "No"], a: 1 },
+  { q: "What is the plural of 'cat'?", o: ["Cats", "Cat's", "Cates", "Cat"], a: 0 },
+  { q: "Which word is an adjective?", o: ["Run", "Big", "Quickly", "Under"], a: 1 },
+  { q: "What is a sentence?", o: ["A single word", "A group of words that makes sense", "A letter", "A number"], a: 1 },
+  { q: "Choose the correct pronoun: ___ am a student.", o: ["I", "Me", "My", "Mine"], a: 0 },
+  { q: "What is the past tense of 'go'?", o: ["Goes", "Going", "Went", "Go"], a: 2 },
+  { q: "Which is a preposition?", o: ["She", "sat", "between", "parents"], a: 2 },
+  { q: "What is a synonym for 'happy'?", o: ["Sad", "Joyful", "Angry", "Tired"], a: 1 },
+  { q: "Choose the correct form: She ___ to school.", o: ["go", "goes", "going", "gone"], a: 1 },
+  { q: "What is the opposite of 'hot'?", o: ["Cold", "Warm", "Wet", "Dry"], a: 0 },
+  { q: "Which word is a conjunction?", o: ["But", "Quick", "House", "Blue"], a: 0 },
+  { q: "What is the singular of 'children'?", o: ["Child", "Childs", "Childen", "Childrens"], a: 0 },
+  { q: "Choose the correct spelling: 'Beautiful'", o: ["Beutiful", "Beautiful", "Beautifull", "Beauteful"], a: 1 },
+  { q: "What is an adverb?", o: ["A noun", "A verb", "A word that describes a verb", "A pronoun"], a: 2 },
+  { q: "Which sentence is correct?", o: ["I goed home.", "I went home.", "I go home.", "I going home."], a: 1 },
+  { q: "What is the plural of 'mouse'?", o: ["Mouses", "Mice", "Mouse", "Mices"], a: 1 },
+  { q: "Choose the correct word: The sky is ___", o: ["Blue", "Bluely", "Blues", "Bluer"], a: 0 },
+  { q: "What is a compound word?", o: ["Sun", "Flower", "Sunflower", "Bright"], a: 2 },
+  { q: "Which is an exclamation?", o: ["Wow!", "And", "The", "Run"], a: 0 },
+  // Mathematics
+  { q: "What is 5 + 3?", o: ["6", "7", "8", "9"], a: 2 },
+  { q: "What is 10 - 4?", o: ["4", "5", "6", "7"], a: 2 },
+  { q: "What is 2 × 3?", o: ["4", "5", "6", "7"], a: 2 },
+  { q: "What is 12 ÷ 3?", o: ["3", "4", "5", "6"], a: 1 },
+  { q: "What is half of 10?", o: ["3", "4", "5", "6"], a: 2 },
+  { q: "What is 1/4 of 8?", o: ["1", "2", "3", "4"], a: 1 },
+  { q: "What is the next number: 1, 2, 3, ___", o: ["4", "5", "6", "7"], a: 0 },
+  { q: "What is 25 + 15?", o: ["35", "40", "45", "50"], a: 1 },
+  { q: "What is 50 - 20?", o: ["25", "30", "35", "40"], a: 1 },
+  { q: "What is 4 × 5?", o: ["15", "18", "20", "25"], a: 2 },
+  { q: "What is 18 ÷ 2?", o: ["7", "8", "9", "10"], a: 2 },
+  { q: "What is 3/4 as decimal?", o: ["0.25", "0.5", "0.75", "1"], a: 2 },
+  { q: "What is the shape with 3 sides?", o: ["Square", "Triangle", "Circle", "Rectangle"], a: 1 },
+  { q: "What is the perimeter of a square with side 4 cm?", o: ["12", "16", "20", "24"], a: 1 },
+  { q: "What is the area of a rectangle 5cm × 3cm?", o: ["15", "16", "18", "20"], a: 0 },
+  { q: "What is 100 - 37?", o: ["53", "63", "73", "83"], a: 1 },
+  { q: "What is 6 × 7?", o: ["36", "42", "48", "54"], a: 1 },
+  { q: "What is 45 ÷ 5?", o: ["7", "8", "9", "10"], a: 2 },
+  { q: "What is 2 + 2 × 3?", o: ["8", "12", "6", "10"], a: 0 },
+  { q: "What is the largest number: 12, 15, 10, 18?", o: ["10", "12", "15", "18"], a: 3 },
+  // Islamiat
+  { q: "Who is the first prophet?", o: ["Adam", "Noah", "Abraham", "Moses"], a: 0 },
+  { q: "How many times do Muslims pray a day?", o: ["3", "4", "5", "6"], a: 2 },
+  { q: "What is the holy book of Muslims?", o: ["Bible", "Torah", "Quran", "Vedas"], a: 2 },
+  { q: "Where was Prophet Muhammad born?", o: ["Mecca", "Medina", "Jerusalem", "Egypt"], a: 0 },
+  { q: "What is the name of the angel who brought messages to prophets?", o: ["Jibril", "Mikael", "Israfeel", "Azrael"], a: 0 },
+  { q: "What is the first month of Islamic calendar?", o: ["Muharram", "Safar", "Rabi", "Rajab"], a: 0 },
+  { q: "How many pillars of Islam are there?", o: ["4", "5", "6", "7"], a: 1 },
+  { q: "What is the direction of prayer?", o: ["Kaaba", "Mecca", "Medina", "Jerusalem"], a: 0 },
+  { q: "Who was the wife of Prophet Muhammad?", o: ["Aisha", "Khadija", "Fatima", "Mary"], a: 1 },
+  { q: "What is the night journey called?", o: ["Hijra", "Miraj", "Hajj", "Umrah"], a: 1 },
+  { q: "What is the fasting month?", o: ["Ramadan", "Shawwal", "Dhul Hijjah", "Muharram"], a: 0 },
+  { q: "Who built the Kaaba?", o: ["Adam", "Abraham", "Ishmael", "Isaac"], a: 1 },
+  { q: "What is the call to prayer called?", o: ["Adhan", "Iqama", "Takbir", "Tasbih"], a: 0 },
+  { q: "How many chapters in Quran?", o: ["100", "110", "114", "120"], a: 2 },
+  { q: "What is the pilgrimage called?", o: ["Hajj", "Umrah", "Zakat", "Salah"], a: 0 },
+  { q: "Who was the first caliph?", o: ["Abu Bakr", "Umar", "Uthman", "Ali"], a: 0 },
+  { q: "What is charity called?", o: ["Zakat", "Sadaqah", "Fitra", "Khums"], a: 0 },
+  { q: "What is the last prophet?", o: ["Muhammad", "Jesus", "Moses", "Noah"], a: 0 },
+  { q: "What is the holy city?", o: ["Mecca", "Medina", "Jerusalem", "Damascus"], a: 0 },
+  { q: "What is the greeting?", o: ["Assalamu Alaikum", "Hello", "Hi", "Good morning"], a: 0 },
+  // Science
+  { q: "What do plants need to make food?", o: ["Sunlight", "Water", "Air", "Soil"], a: 0 },
+  { q: "What is the largest planet?", o: ["Earth", "Mars", "Jupiter", "Saturn"], a: 2 },
+  { q: "What is water in solid form?", o: ["Ice", "Steam", "Liquid", "Gas"], a: 0 },
+  { q: "What do animals breathe?", o: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], a: 0 },
+  { q: "What is the sun?", o: ["Planet", "Star", "Moon", "Comet"], a: 1 },
+  { q: "What is the color of blood?", o: ["Blue", "Red", "Green", "Yellow"], a: 1 },
+  { q: "What is the skeleton for?", o: ["Support", "Food", "Water", "Air"], a: 0 },
+  { q: "What is evaporation?", o: ["Freezing", "Melting", "Boiling", "Condensation"], a: 2 },
+  { q: "What is a herbivore?", o: ["Eats plants", "Eats meat", "Eats both", "Eats nothing"], a: 0 },
+  { q: "What is the heart for?", o: ["Pumping blood", "Breathing", "Thinking", "Moving"], a: 0 },
+  { q: "What is a magnet?", o: ["Attracts iron", "Repels iron", "Makes light", "Makes sound"], a: 0 },
+  { q: "What is the moon?", o: ["Planet", "Star", "Satellite", "Asteroid"], a: 2 },
+  { q: "What is photosynthesis?", o: ["Making food", "Breathing", "Moving", "Sleeping"], a: 0 },
+  { q: "What is a conductor?", o: ["Allows heat", "Blocks heat", "Makes cold", "Makes hot"], a: 0 },
+  { q: "What is the boiling point of water?", o: ["0°C", "100°C", "50°C", "200°C"], a: 1 },
+  { q: "What is a carnivore?", o: ["Eats plants", "Eats meat", "Eats both", "Eats insects"], a: 1 },
+  { q: "What is gravity?", o: ["Pulls down", "Pushes up", "Makes light", "Makes sound"], a: 0 },
+  { q: "What is a seed?", o: ["Baby plant", "Flower", "Leaf", "Stem"], a: 0 },
+  { q: "What is sound?", o: ["Light", "Heat", "Vibration", "Electricity"], a: 2 },
+  { q: "What is the Earth?", o: ["Star", "Planet", "Moon", "Sun"], a: 1 },
+  // Urdu
+  { q: "اسم کیا ہے؟", o: ["فعل", "اسم", "حرف", "ضمیر"], a: 1 },
+  { q: "فعل کیا ہے؟", o: ["اسم", "فعل", "حرف", "ضمیر"], a: 1 },
+  { q: "کتاب کا واحد ہے؟", o: ["کتاب", "کتابیں", "کتب", "کتابوں"], a: 0 },
+  { q: "لڑکا کا جمع ہے؟", o: ["لڑکا", "لڑکی", "لڑکے", "لڑکوں"], a: 2 },
+  { q: "مذکر کی مثال؟", o: ["لڑکا", "لڑکی", "کتاب", "گھوڑی"], a: 0 },
+  { q: "مونث کی مثال؟", o: ["لڑکا", "لڑکی", "کتاب", "گھوڑا"], a: 1 },
+  { q: "اسم معرفہ کی مثال؟", o: ["علی", "لڑکا", "کتاب", "تمام"], a: 3 },
+  { q: "اسم نکرہ کی مثال؟", o: ["علی", "لڑکا", "کتاب", "تمام"], a: 1 },
+  { q: "فعل ماضی کی مثال؟", o: ["کھاتا", "کھایا", "کھائے گا", "کھا رہا"], a: 1 },
+  { q: "فعل حال کی مثال؟", o: ["کھاتا", "کھایا", "کھائے گا", "کھا رہا"], a: 0 },
+  { q: "فعل مستقبل کی مثال؟", o: ["کھاتا", "کھایا", "کھائے گا", "کھا رہا"], a: 2 },
+  { q: "ضمیر کی مثال؟", o: ["میں", "کتاب", "کھانا", "بڑا"], a: 0 },
+  { q: "حرف ربط کی مثال؟", o: ["اور", "کتاب", "کھانا", "بڑا"], a: 0 },
+  { q: "مترادف الفاظ: اچھا", o: ["برا", "نیک", "بڑا", "چھوٹا"], a: 1 },
+  { q: "متضاد الفاظ: اچھا", o: ["برا", "نیک", "بڑا", "چھوٹا"], a: 0 },
+  { q: "اسم علم کی مثال؟", o: ["علی", "لڑکا", "کتاب", "گلاب"], a: 0 },
+  { q: "اسم صفت کی مثال؟", o: ["بڑا", "لڑکا", "کتاب", "تمام"], a: 0 },
+  { q: "جملہ کی نوعیت: کیا تم جاؤ گے؟", o: ["خبر", "استفہام", "امر", "تعجب"], a: 1 },
+  { q: "واحد جمع: درخت", o: ["درخت", "درختوں", "درختیں", "درختے"], a: 2 },
+  { q: "مرکب لفظ: سفید + کالا", o: ["سفید کالا", "سیاہ", "سفید", "کالا"], a: 1 },
 ];
